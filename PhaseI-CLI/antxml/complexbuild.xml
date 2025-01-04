@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<project name="Hello" default="compile">
+    <target name="clean" description="remove intermediate files">
+        <delete dir="classes"/>
+    </target>
+    <target name="clobber" depends="clean" description="remove all artifact files">
+        <delete file="shoutzout.jar"/>
+    </target>
+    <target name="compile" description="compile the Java source code to class files">
+        <mkdir dir="classes"/>
+        <javac srcdir="." destdir="classes" includeantruntime="true"/>
+    </target>
+    <target name="run" depends="compile">
+        <java classname="shoutzout" fork="true">
+         <arg value="-cf ./classes/" />
+        </java>
+        <echo message="Ant Java Class Processing Finished."/>
+    </target>
+</project>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<project name="shoutzout" default="compile">
+<target name="compile">
+       <javac srcdir="." includeantruntime="true" includes="shoutzout.java" destdir="."></javac>
+</target>
+
+<target name="run" depends="compile">
+       <java classname="shoutzout" fork="true"></java>
+</target>
+</project>

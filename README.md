@@ -1,6 +1,7 @@
 # javasavitchsupport-
 Supporting Projects For CSC145 - University of South Carolina
-1) Assumptions:
+1) Savitch Text - 8th Edition + -> Java an Introduction to Problem Solving and Programming
+2) Assumptions:
    a) Ubuntu 24 with JDK and JRE loaded.
    b) Apache ANT installed (Equivalent to C/C++ Make).
    c) Command Line Only Needs.
